@@ -1,0 +1,16 @@
+.shelf {
+  /* height: 88vh; */
+  box-shadow: none;
+  overflow: auto;
+  margin-left: 1vw;
+
+  padding: .5vw;
+  /* background-color: white; */
+  width: fit-content;
+}
+
+.shelf p {
+  font-size: .75vw;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1vw; 
+}

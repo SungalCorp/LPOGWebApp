@@ -1,0 +1,9 @@
+.LivingPOG{
+    height:'50vw';
+    overflow:'auto';
+}
+.LivingPOG h2 {
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1vw;  
+}

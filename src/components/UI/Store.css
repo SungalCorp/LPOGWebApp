@@ -1,0 +1,18 @@
+.Store{
+     height:auto;  
+    /*overflow: auto;  */
+    border-radius: 12px;
+    margin: 1vw;
+    padding-top:.5vw;
+    padding-bottom: .1rem;
+    background-color: rgb(151, 157, 167);
+    width:75vw;
+}
+
+.Store h2 {
+    font-size: 1vw;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1vw; 
+    
+}

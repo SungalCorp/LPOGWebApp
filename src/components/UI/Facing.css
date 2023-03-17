@@ -1,0 +1,26 @@
+.facing {
+  display: contents;
+  flex-direction: column;
+  border-radius: 12px;
+  font-size: .5rem;
+}
+.facing_img {
+  width:auto;
+  height:auto;
+}
+
+.percentage-tag{
+  margin-right:.1vw;
+  border-radius: 3px;
+  text-align:center;
+  font-size: 1vw;
+
+}
+
+
+
+
+
+
+
+  

@@ -1,0 +1,25 @@
+.Gondola {
+  /* height: 60vw; */
+  border-style: double;
+  border-color:whitesmoke;
+  border-width: 1vw;
+  overflow: auto;
+  align-items: center;
+  /* padding: 3vw; */
+  background-color: #deded5;
+  margin-top: 0vw;
+  margin-bottom:2vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  width:fit-content;
+}
+
+
+
+.Gondola h3 {
+  font-size: 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1vw;
+  margin-right:1vw;
+  color:black;
+}
