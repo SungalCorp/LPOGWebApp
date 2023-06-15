@@ -4,7 +4,6 @@
   overflow: auto;
   margin:.8vw;
   /* margin-left: 1vw; */
-  font-size: .75vw;
 
   padding: .5vw;
   /* background-color: white; */
@@ -21,22 +20,27 @@
   position: absolute;
   margin-top: -6vw;
   margin-left: -4vw;
-  padding: 0.7vw;
-  width: 7vw;
+  padding: 1vw;
+  width: 5vw;
   height: 3vw;
+  /* background-color:  rgb(232, 228, 214);
+  color: rgb(68, 114, 196); */
   background-color: rgb(68, 114, 196);
-  color: white;
-  font-size: .8vw;
+  color: rgb(232, 228, 214);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 1vw;
   border-top-left-radius: 1vw; 
   border-bottom-left-radius: 1vw;
   border-top-right-radius: 0vw;
   border-bottom-right-radius: 0vw;
+  box-shadow: 0 .1vw .5vw rgba(2, 2, 2, .5);
   z-index: 1;
 }
 
 
 .shelfPlate {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(232, 228, 214);
   -webkit-box-shadow:1vw 3vw 3vw -.3vw rgba(0,0,0,1);
   -moz-box-shadow:1vw 3vw 3vw -.3vw rgba(0,0,0,1);
   box-shadow:1vw 3vw 3vw -.3vw rgba(0,0,0,1);
@@ -47,27 +51,28 @@
   margin-bottom: 3vw;
   height:3vw;
   /* border-radius: 18px; */
-  border-top-left-radius: 0px; 
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 18px;
-  border-bottom-right-radius: 18px;
+  border-top-left-radius: 0vw; 
+  border-bottom-left-radius: 0vw;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius:1vw;
   position: relative;
   z-index: 2;
 }
 
 .shelfHeader {
+  font-size: .5vw;
   display:flex;
   justify-content: space-between;
   padding-bottom: .5vw;
 }
-.shelfLabel {
+/* .shelfLabel {
   background-color: white;
   height: fit-content;
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 2vw; 
   font-size: 1vw;
   opacity: 0;
-}
+} */
 
 .shelfStatus {
   width:fit-content;

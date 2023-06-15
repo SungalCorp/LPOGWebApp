@@ -20,15 +20,15 @@ const Shelf = (props) => {
         <br/>
         <LightingNotice value = {props.shelf[0].shelfIslit} /> */}
         <div className = 'shelfHeader'>
-            <span className = "shelfLabel" style={{width:'fit-content'}}>
+            {/* <span className = "shelfLabel" style={{width:'fit-content'}}>
               Shelf:{props.shelf[0].shelfLevel}
-            </span>
+            </span> */}
 
             <div className = 'shelfStatus'>    
                            
                 <ToggleNotice value = {props.shelf[0].shelfIslit}
                                   valuelist={['Lit','Unlit']} />
-                <ToggleNotice value = {true} valuelist={['-','-']} /> 
+                <ToggleNotice value = {true} valuelist={['--','--']} /> 
                 <ToggleNotice value={props.shelf[0].shelfIsconnected} 
                               valuelist={['Online','Offline']}/> 
                                                  
@@ -52,7 +52,7 @@ const Shelf = (props) => {
       </Card>
       <Card className='shelfPlate'></Card>
       <Card className='shelfTag'>
-            SHELF:{props.shelf[0].shelfLevel   }      
+            Shelf:{props.shelf[0].shelfLevel   }      
       </Card>
     </div>
     

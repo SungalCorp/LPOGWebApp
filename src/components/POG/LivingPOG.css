@@ -1,56 +1,41 @@
 .OuterPOGContainer{    
     display: flex;
     flex-direction: row;
-    margin-right: 40vw;
+    margin-right: 10vw;
     
 }
 
 .LivingPOG{
-    height:90vw;
-    overflow:auto;
-    border: none;
+    background-color: rgb(255, 255, 255);
+    /* height:90vw; */
+    /* overflow:auto; */
 }
 
 
 .LivingPOGContainer{
- 
-    
-    margin-left: 1vw;
-    transition: transform 0.8s ease-in-out;
-
+    width: max-content;
+    transition: transform 0.5s ease-in-out;
+    margin: 1vw;
 }
 .LivingPOGContainer.alternative{
-    height:90vw;
-    overflow:auto;
-    /* display: block; */
-    /* margin-right: auto; */
-
-
-    transform: translateX(5vw);
+    width: max-content;
+    transform: translateX(-25vw);
+    margin: 1vw;
 
 }
 
-.LivingPOG h2 {
-    font-size: 1vw;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 1vw;  
-}
+
 
 .LeftSidePanel {
     font-size: .5vw;
     height:fit-content;  
-    /*overflow: auto;  */
-    border-radius: 1px; 
-    margin-top: 3vw;
-    margin-left:-3vw;
-    padding-top:1.5vw;
-    padding-right:2vw;
-    padding-bottom: 2vw;
-    padding-left:2vw;
-    background-color:rgb(255, 255, 255);
-    /* background-color:rgb(181 181 197); */
-    width:30vw;
-
+    border-radius: 12px; 
+    margin: .5vw;
+    margin-top: 4.5vw;
+    margin-left: -1vw;
+    padding: 1.5vw;          
+    background-color:rgb(68, 114, 196);
+    width:fit-content;
     transition: transform 0.5s ease-in-out;
 
 
@@ -58,13 +43,14 @@
 .LeftSidePanel.alternative {
     font-size: .5vw;
     height:fit-content;  
-    /*overflow: auto;  */
-    border-radius: 1px; 
-    margin-top: 3vw;
-    margin-left:-25vw;
-    background-color:rgb(255, 255, 255);
-    width:30vw;
-    transform: translateX(-25vw);
+    border-radius: 12px; 
+    margin: .5vw;
+    margin-top: 4.5vw;
+    margin-left: -1vw;
+    padding: 1.5vw;          
+    background-color:rgb(68, 114, 196);
+    width:fit-content;
+    transform: translateX(-35vw);
 
   }
 

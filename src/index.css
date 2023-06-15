@@ -9,31 +9,37 @@ html {
 }
 
 body {
-  margin: 0;
   background-color: white;
 }
 .logo-container {
-  margin: .5vw; 
   display: flex;
   flex-direction: row;
-  padding-left: 1vw;
+  /* padding-left: 1vw; */
+  /* margin-left: 30vw;
+  margin-right: 20vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; */
+
+   
 }
 
- .logo-container img {
+ /* .logo-container img {
   height: 3vw;
-  width: auto;
-  margin-right: 1vw;
+  margin-top: 1vw;
+  align-items: center;  
    
-} 
-/* .livingPOG_img{
+}  */
+.livingPOG_img{
+  margin: 1.5vw;
+  margin-left: 30vw;
   height: 5vw;
-  width:10vw;
 }
 
 .sungal_img{
-  height: 6vw;
-  width: 6vw;
-}  */
+  height: 3vw;
+} 
 
 
 /* 

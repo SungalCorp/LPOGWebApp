@@ -38,7 +38,6 @@ function TableWithCheckboxes(props) {
   return (
     <div className='outerContainer'>
       <div className = 'title'>{props.title}</div>
-        <div className='innerContainer'>
             <table>
               <thead>
                 <tr>
@@ -85,7 +84,6 @@ function TableWithCheckboxes(props) {
                   }
               </tbody>
             </table>      
-        </div>
         <button onClick={filterHandler}>Apply Filter</button>     
     </div>
   );

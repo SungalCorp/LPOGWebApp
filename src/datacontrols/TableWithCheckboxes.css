@@ -4,56 +4,52 @@ td {
     
     margin-left: 1vw;
     margin-right:1vw;
-    color:rgb(70, 0, 155);
+    color:rgb(68, 114, 196);
 }
 tr{
     border-radius: 1px;
-    background-color: whitesmoke;
+    background-color: rgb(232, 228, 214);
 }
 th{
-    background-color: rgb(199, 211, 211);
+    background-color:rgb(232, 228, 214);
     font-size: 1vw;
+    color: rgb(68, 114, 196);
 }
-.innerContainer {
-    padding: 1vw;
-    border-radius: 1px;
-    border-style: solid;
-    border-width: 1.1 vw;
-    border-color: rgb(199, 211, 211);
-}
+
 .outerContainer {
     
     padding: 1vw;
     border-radius: 1px;
     border-style: solid;
     border-width: .5 vw;
-    border-color: aqua; 
+    border-color:rgb(68, 114, 196); 
 }
 
 .title{
 
     position: relative;
     left: 0px;
-    top: -15px;
+    top: -10px;
     width: fit-content;
     padding-left:10px;
     padding-right: 10px;
     font-size: 1vw;
-    background-color: aqua;
-    color:black;
+    background-color:rgb(68, 114, 196);
+    color:rgb(232, 228, 214);
     
 }
 
 button {
     margin-top: .8vw;
-    background-color: black;
+    background-color: rgb(232, 228, 214);
     font-size: 1vw;
     color:rgb(68, 114, 196);
     /* margin-bottom: 1.5vw; */
     margin-left: 5.3vw;
 }
 .checkBox{
-    transform:scale(1.5);
-    size: .1vw;
+    transform:scale(1);
+    size: 1vw;
+    align-items: center;
 
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ToggleNotice = (props) => {
     const condition = props.value ? props.valuelist[0] : props.valuelist[1];
-    const color = props.value ? 'green' : 'red';
+    const color = props.value ? '#39FF14' : '#ff3131';
 
   const barStyle = {
     marginleft: '1vw',
