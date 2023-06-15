@@ -1,0 +1,30 @@
+.colorkey{
+  margin-left: .7vw; 
+  border-radius: .3vw;
+  width: 1.8vw;
+  height: 1.5vw;
+  font-size: .7vw;
+  box-shadow: 0 1px 8px rgba(2, 2, 2, 0.25);
+
+  /* border-style: solid; */
+}
+.colorkeyItem {
+  display: flex;
+  flex-direction: row;
+}
+span{
+  margin-top:.2vw;
+  font-size: .7vw;
+  margin-left: .5vw;
+}
+.colorkeySection{
+  padding:.5vw;
+  /* margin-top: 1vw; */
+  display: flex;
+  flex-direction: row;  
+}
+/* .colorkey_img {
+  width: 1.5vw;
+  height: 1.3vw;
+} */
+

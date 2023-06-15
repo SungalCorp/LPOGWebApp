@@ -1,0 +1,30 @@
+.Store{
+    /*overflow: auto;  */
+    border-radius: 1px;
+    margin: 1vw;
+    margin-left: 1vw;
+    width:max-content;
+    height:fit-content;  
+    color: rgb(68, 114, 196);
+    position: relative;
+    /* background-color: rgb(205, 65, 65); */
+
+}
+
+.Store h2 {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1vw; 
+    text-align: center;
+    
+}
+
+.gondola-container{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+   
+
+}
+  
+ 

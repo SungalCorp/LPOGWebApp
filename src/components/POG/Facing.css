@@ -1,0 +1,40 @@
+.facing {
+  display: contents;
+  flex-direction: column;
+  border-radius: 12px;
+  font-size: .5rem;
+
+
+
+}
+
+.bubble_condition_img{
+  
+  width:2.5vw;
+  height:2.16vw;
+  position: absolute;
+  bottom: 2vw;
+  left: .35vw;
+  
+}
+.facing_img {
+  width:auto;
+  height:auto;
+}
+
+.percentage-tag{
+  margin-right:.1vw;
+  margin-top: .5vw;
+  border-radius: 6px;
+  text-align:center;
+  font-size: 1vw;
+
+}
+
+
+
+
+
+
+
+  

@@ -1,0 +1,79 @@
+.shelf {
+  /* height: 88vh; */
+  box-shadow: none;
+  overflow: auto;
+  margin:.8vw;
+  /* margin-left: 1vw; */
+  font-size: .75vw;
+
+  padding: .5vw;
+  /* background-color: white; */
+  /* width: fit-content; */
+  position: relative;
+  z-index: 3;
+
+
+
+
+}
+
+.shelfTag {
+  position: absolute;
+  margin-top: -6vw;
+  margin-left: -4vw;
+  padding: 0.7vw;
+  width: 7vw;
+  height: 3vw;
+  background-color: rgb(68, 114, 196);
+  color: white;
+  font-size: .8vw;
+  border-top-left-radius: 1vw; 
+  border-bottom-left-radius: 1vw;
+  border-top-right-radius: 0vw;
+  border-bottom-right-radius: 0vw;
+  z-index: 1;
+}
+
+
+.shelfPlate {
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow:1vw 3vw 3vw -.3vw rgba(0,0,0,1);
+  -moz-box-shadow:1vw 3vw 3vw -.3vw rgba(0,0,0,1);
+  box-shadow:1vw 3vw 3vw -.3vw rgba(0,0,0,1);
+
+  margin-top: -3.5vw;
+  margin-left: .8vw;
+  margin-right: .8vw;
+  margin-bottom: 3vw;
+  height:3vw;
+  /* border-radius: 18px; */
+  border-top-left-radius: 0px; 
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  position: relative;
+  z-index: 2;
+}
+
+.shelfHeader {
+  display:flex;
+  justify-content: space-between;
+  padding-bottom: .5vw;
+}
+.shelfLabel {
+  background-color: white;
+  height: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2vw; 
+  font-size: 1vw;
+  opacity: 0;
+}
+
+.shelfStatus {
+  width:fit-content;
+  height: fit-content;
+  border-radius: 12px;
+  background-color:rgb(185, 185, 199);
+  margin-left: auto;
+  padding:.3vw;
+}
