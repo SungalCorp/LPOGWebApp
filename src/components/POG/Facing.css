@@ -3,9 +3,7 @@
   flex-direction: column;
   border-radius: 12px;
   font-size: .5rem;
-
-
-
+  position: relative;
 }
 
 .bubble_condition_img{

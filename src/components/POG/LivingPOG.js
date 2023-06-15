@@ -8,7 +8,7 @@ import ColorKey from '../UI/ColorKey';
 import * as globals from '../../lib/Globals.js';
 import TableWithCheckboxes from '../../datacontrols/TableWithCheckboxes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTh, faBars, faFilter, faCross, faX, faXmark, faUserXmark, faXmarksLines, faXmarkCircle, faBold, faVolumeXmark, faCircleXmark, faFilterCircleXmark, faXRay, faEarListen } from '@fortawesome/free-solid-svg-icons';
+import { faTh, faBars, faFilter, faCross, faX, faXmark, faUserXmark, faXmarksLines, faXmarkCircle, faBold, faVolumeXmark, faCircleXmark, faFilterCircleXmark, faXRay, faEarListen, faArrowLeft, faLeftLong, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { Card } from 'react-bootstrap';
 
 const LivingPOG = () => {
@@ -345,11 +345,10 @@ const LivingPOG = () => {
     return localStorage.getItem(globals.USER_NAME + filteredListName)
   }
 
-
   return (
     <div className='OuterPOGContainer'>
-        <button className="buttonStyle1" onClick={toggleGondolaLayoutMode}>
-        {displayStyle === "default" ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faFilter} />}
+        <button className={`buttonStyle1 ${displayStyle}`} onClick={toggleGondolaLayoutMode}>
+        {displayStyle === "default" ? <FontAwesomeIcon icon={faAngleLeft} /> : <FontAwesomeIcon icon={faAngleRight} />}
         </button>
        
         
