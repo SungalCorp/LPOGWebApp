@@ -34,10 +34,10 @@ function App() {
   return (
 <div>
     <div className="logo-container">        
-        <img  
+        {/* <img  
             className="sungal_img" 
             src={SungalImage} 
-            alt = 'SungalImg'/>
+            alt = 'SungalImg'/> */}
 
         <img  
             className="livingPOG_img" 
