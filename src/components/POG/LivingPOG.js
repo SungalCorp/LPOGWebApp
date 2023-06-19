@@ -7,9 +7,11 @@ import ColorKey from '../UI/ColorKey';
 //import LPogMenu1 from '../Menus/LPOGMenu_1';
 import * as globals from '../../lib/Globals.js';
 import TableWithCheckboxes from '../../datacontrols/TableWithCheckboxes';
+import { faTh, faBars, faFilter, faCross, faX, faXmark, faUserXmark, faXmarksLines, faXmarkCircle, faBold, faVolumeXmark, faCircleXmark, faFilterCircleXmark, faXRay, faEarListen, faArrowLeft, faLeftLong, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTh, faBars, faFilter, faCross, faX, faXmark, faUserXmark, faXmarksLines, faXmarkCircle, faBold, faVolumeXmark, faCircleXmark, faFilterCircleXmark, faXRay } from '@fortawesome/free-solid-svg-icons';
-import { Card } from 'react-bootstrap';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import Card from '../UI/Card';
+import { redirect } from 'react-router-dom';
 
 const LivingPOG = () => {
   // fetch data
@@ -346,15 +348,27 @@ const LivingPOG = () => {
   }
 
 
+
+  const handleLogout = () => {
+    // setIsLoggedin[false];
+    console.log('logged out!')
+    return redirect('/LoginBox')
+  }
+
+
   return (
     <div className='OuterPOGContainer'>
-        
-        <button className="buttonStyle1" onClick={toggleGondolaLayoutMode}>
-        {displayStyle === "default" ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faFilter} />}
-        </button>
+        {/* <button className={`buttonStyle1 ${displayStyle}`} onClick={toggleGondolaLayoutMode}>
+        {displayStyle === "default" ? <FontAwesomeIcon icon={faAngleLeft} /> : <FontAwesomeIcon icon={faAngleRight} />}
+        </button> */}
        
         
         <div className={`LeftSidePanel ${displayStyle}`} >
+
+            <FontAwesomeIcon icon={faUser} className='userIcon' />
+            <br/>
+            <button className='logoutButton'onClick={handleLogout} >Log out</button>
+            <Card className='divider'/>
 
             <TableWithCheckboxes 
                   data={storesList} 
@@ -362,19 +376,25 @@ const LivingPOG = () => {
                   //selecteditemlist={'45,17,65'}
                   keyField={'storeID'} 
                   headings = {['Select','Storename','Location']}
-                  fieldList = {['storeName','storeLocation']}
+                  // fieldList = {['storeName','storeLocation']}
+                  fieldList = {['storeName']}
                   onFilter = {storeFilterHandler}
-                  title = {"Filter By Store"}/> 
+                  // title = {"Filter By Store"}/> 
+                  title = {"Store"}/> 
             <br/>
+            <Card className='divider'/>
+
             <br/>
             <TableWithCheckboxes 
                   data={gondolaList} 
                   selecteditemlist={'45,17,65'} //{localStorage.getItem(username + globals.SELECTED_GONDOLA_LIST_FILTER)}
                   keyField={'gondolaID'} 
                   headings = {['Select','Gondola','Location','Store']}
-                  fieldList = {['gondolaName','gondolaLocation','storeName']}
+                  // fieldList = {['gondolaName','gondolaLocation','storeName']}
+                  fieldList = {['gondolaName','storeName']}
                   onFilter = {gondolaFilterHandler}
-                  title = {"Filter By Gondola"}/> 
+                  // title = {"Filter By Gondola"}/> 
+                  title = {"Gondola"}/> 
             <br/>
             <br/>
             {/* <TableWithCheckboxes 

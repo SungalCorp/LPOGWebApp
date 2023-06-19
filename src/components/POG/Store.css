@@ -1,28 +1,31 @@
 .Store{
-    /*overflow: auto;  */
-    border-radius: 1px;
+    border-radius: 12px;
     margin: 1vw;
     margin-left: 1vw;
     width:max-content;
     height:fit-content;  
-    color: rgb(68, 114, 196);
+    /* color: rgb(255, 255, 255); */
     position: relative;
-    /* background-color: rgb(205, 65, 65); */
+    background-color:  rgb(68, 114, 196);
 
 }
 
 .Store h2 {
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 1vw; 
-    text-align: center;
+    font-size:1.3vw;
+    color: rgb(232, 228, 214);
+    /* font-family: Arial, Helvetica, sans-serif; */
+    margin-left: 4vw; 
+    margin-top: 2vw;
+    align-items: center;
     
 }
 
 .gondola-container{
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    position: relative;
+    height: 65vh;
+    overflow: auto; 
    
 
 }

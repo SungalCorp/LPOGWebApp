@@ -7,6 +7,12 @@ import RootLayout from './pages/Root';
 import AuthenticationPage, {action as authAction}from './pages/Authentication';
 var logoImage = require('./imgs/LIVINGPOG.png')
 var SungalImage = require('./imgs/SUNGAL.png')
+
+// const [name, setName] = useState('');
+// const [email, setEmail] = useState('');
+// const [password, setPassword] = useState('');
+// const [isLoggedin, setIsLoggedin] = useState(false);
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -34,10 +40,10 @@ function App() {
   return (
 <div>
     <div className="logo-container">        
-        <img  
+        {/* <img  
             className="sungal_img" 
             src={SungalImage} 
-            alt = 'SungalImg'/>
+            alt = 'SungalImg'/> */}
 
         <img  
             className="livingPOG_img" 
