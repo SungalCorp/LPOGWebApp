@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './TableWithCheckboxes.css';
+import { Card } from 'react-bootstrap';
+
+
 
 function TableWithCheckboxes(props) {
   //
@@ -18,6 +21,7 @@ function TableWithCheckboxes(props) {
     const value = target.value;
     //const name = target.name;
     const isChecked = target.checked
+    
     if (isChecked) {
       setCheckedItems([...checkedItems, value]);
     } else {
@@ -39,19 +43,6 @@ function TableWithCheckboxes(props) {
     <div className='outerContainer'>
       <div className = 'title'>{props.title}</div>
             <table>
-              <thead>
-                <tr>
-                {props.headings.map((heading,index )=> 
-                    { 
-                      return(
-                        <th>{heading}</th>
-                      );
-                    })
-                  }
-
-                </tr>
-              </thead>
-              <tbody>
                 
                 {props.data.map((datarow,index )=> 
                     { 
@@ -59,14 +50,7 @@ function TableWithCheckboxes(props) {
                       
                       return(
                         <tr key={datarow[props.keyField]}>
-                        <td>
-                          <input className='checkBox'
-                            type="checkbox"
-                            value={datarow[props.keyField]}
-                            // checked={ckfunc(datarow)}
-                            onChange={handleCheckboxChange}
-                          />
-                        </td>
+                    
                         {props.fieldList.map((fieldName,index)=> 
                               { 
                                 return(
@@ -74,6 +58,16 @@ function TableWithCheckboxes(props) {
                                 );
                               })
                         }
+                        <td>
+                          <input className='checkBox'
+                            type="checkbox"
+                            value={datarow[props.keyField]}
+                            // checked={ckfunc(datarow)}
+                            // onClick={filterHandler}
+                            onChange={handleCheckboxChange}
+
+                          />
+                        </td>
 
                         {/* <td>{props.row.name}</td>
                         <td>{props.row.email}</td> */}
@@ -82,7 +76,6 @@ function TableWithCheckboxes(props) {
                       );
                     })
                   }
-              </tbody>
             </table>      
         <button onClick={filterHandler}>Apply Filter</button>     
     </div>

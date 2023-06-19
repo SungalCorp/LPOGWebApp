@@ -6,41 +6,68 @@
 }
 .LivingPOG{
     background-color: rgb(255, 255, 255);
+    overflow: auto;
+    height:85vh
 }
 .LivingPOGContainer{
     width: max-content;
     transition: transform 0.5s ease-in-out;
-    margin: 1vw;
+    margin-left: 20vw;
 }
-.LivingPOGContainer.alternative{
+/* .LivingPOGContainer.alternative{
     width: max-content;
     transform: translateX(-25vw);
     margin: 1vw;
-}
+} */
 .LeftSidePanel {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    /* left: 0; */
+    margin-left: -.55vw;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
     font-size: .5vw;
-    height:fit-content;  
-    border-radius: 12px; 
-    margin: .5vw;
-    margin-top: 4.5vw;
-    margin-left: -3.5vw;
-    padding: 1.5vw;          
     background-color:rgb(68, 114, 196);
-    width:fit-content;
+    width:15vw;
     transition: transform 0.5s ease-in-out;
 }
-.LeftSidePanel.alternative {
+
+.userIcon {
+    font-size: 3vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    color: rgb(232, 228, 214);
+    
+}
+
+.divider {
+    background-color: white;
+    box-shadow: 0 .1vw .5vw rgba(2, 2, 2, 1);
+    width: 12vw;
+    height: .2vh;
+    margin-left: 1.5vw;
+}
+
+.logoutButton {
+    margin-left: 1.5vw;
+    margin-bottom: 1.5vw;
+    
+}
+
+
+/* .LeftSidePanel.alternative {
     font-size: .5vw;
-    height:fit-content;  
-    border-radius: 12px; 
-    margin: .5vw;
-    margin-top: 4.5vw;
-    margin-left: -3.5vw;
+    height:100vh; 
+    margin-top: -6vw;
     padding: 1.5vw;          
     background-color:rgb(68, 114, 196);
     width:fit-content;
     transform: translateX(-35vw);
-  }
+} */
+
+/*
 .buttonStyle1 {
     height:fit-content;
     width: fit-content;
@@ -63,4 +90,5 @@
     font-size: 2vw;
     transition: all 0.3s ease-in-out;
     margin: 20vw 4vw 1vw 0vw;
-  }
+  } 
+  */ 

@@ -1,44 +1,46 @@
-td {
+
+/* th{
+
+    background-color:rgb(68, 114, 196);
     font-size: 1vw;
-    font-family: Arial, Helvetica, sans-serif;
-    
-    margin-left: 1vw;
-    margin-right:1vw;
-    color:rgb(68, 114, 196);
-}
-tr{
-    border-radius: .1vw;
-    background-color: rgb(232, 228, 214);
-}
-th{
-    background-color:rgb(232, 228, 214);
-    font-size: 1vw;
-    color: rgb(68, 114, 196);
-}
+    color: rgb(255, 255, 255);
+} */
 
 .outerContainer {
-    width: 20vw;
-    padding: 1vw;
-    border-radius: .1vw;
-    border-style: solid;
-    border-width: .5 vw;
+    width: fit-content;
+    padding: 1.5vw;
     border-color:rgb(68, 114, 196); 
 }
 
 .title{
-
+    margin: 1vw 1vw 0vw 0vw;
     position: relative;
     width: fit-content;
     padding-left:.1vw;
     padding-right: .1vw;
-    font-size: 1vw;
+    font-size: 1.5vw;
     background-color:rgb(68, 114, 196);
     color:rgb(232, 228, 214);
     
 }
 
+td{
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(255, 255, 255);
+
+}
+tr{
+    background-color: rgb(68, 114, 196);
+    height: 3vw;
+    width: fit-content;
+
+}
+
 button {
-    margin-top: .5vw;
+    
+    margin-top: 1vw;
+    /* margin-left: 10vw; */
     background-color: rgb(232, 228, 214);
     font-size: 1vw;
     color:rgb(68, 114, 196);
@@ -46,6 +48,9 @@ button {
     border-radius: .5vw;
 }
 .checkBox{
-    transform:scale(1);
-    size: 1vw;
+    /* margin-left: vw; */
+    /* transform:scale(1); */
+    size: 2vw;
 }
+
+

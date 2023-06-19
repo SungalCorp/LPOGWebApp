@@ -32,7 +32,8 @@ body {
    
 }  */
 .livingPOG_img{
-  margin: 1.5vw;
+  margin-top: .5vw;
+  margin-bottom: 2vw;
   margin-left: 30vw;
   height: 5vw;
 }

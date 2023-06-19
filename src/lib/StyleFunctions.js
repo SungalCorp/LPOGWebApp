@@ -51,10 +51,10 @@ export const getPercentColor = (percent) => {
     let greenToRed_4 = "#FF0000";
 
     // this is for gradient green to red
-    let blueToRed_1 = "#0000FF";
-    let blueToRed_2 = "#5500AA";
-    let blueToRed_3 = "#AA0055";
-    let blueToRed_4 = "#FF0000";
+    let blueToRed_1 = "#4472C4";
+    let blueToRed_2 = "#ED7D31";
+    let blueToRed_3 = "#FFD966";
+    let blueToRed_4 = "#C23649";
     
     //let increment = 0x55; 
 
@@ -102,7 +102,7 @@ export const getPercentColor = (percent) => {
                                     },
                                     {
                                       "backgroundColor": blueToRed_3,
-                                      "color": white
+                                      "color": black
                                     },
                                     {
                                       "backgroundColor": blueToRed_4,

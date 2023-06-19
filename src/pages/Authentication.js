@@ -1,13 +1,22 @@
 import { redirect } from 'react-router-dom';
 import LoginBox from '../components/POG/LoginBox';
 import * as globals from '../lib/Globals.js'
+import LivingPOG from '../components/POG/LivingPOG';
+import React, {useState } from 'react';
+
 
 const useraccountsURL = globals.API_SERVER_URL + 'dbGet_useraccounts';
 
-function AuthenticationPage() {
-  return <LoginBox />;
-}
 
+
+function AuthenticationPage() {
+
+  return (
+
+    <LoginBox />
+
+  )
+  }
 export default AuthenticationPage;
 
 export async function action({ request }) {

@@ -7,6 +7,12 @@ import RootLayout from './pages/Root';
 import AuthenticationPage, {action as authAction}from './pages/Authentication';
 var logoImage = require('./imgs/LIVINGPOG.png')
 var SungalImage = require('./imgs/SUNGAL.png')
+
+// const [name, setName] = useState('');
+// const [email, setEmail] = useState('');
+// const [password, setPassword] = useState('');
+// const [isLoggedin, setIsLoggedin] = useState(false);
+
 const router = createBrowserRouter([
   {
     path: '/',
